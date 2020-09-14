@@ -1,272 +1,530 @@
 {
   "intents": [
     {
-      "intent": "product_designer",
+      "intent": "digitalmarketing",
       "examples": [
         {
-          "text": "product designer"
+          "text": "Can you help me promote my company online?"
         },
         {
-          "text": "I'm looking for a product designer"
+          "text": "Can you help with marketing?"
+        },
+        {
+          "text": "Can you provide online advertisements?"
+        },
+        {
+          "text": "I am interested in digital marketing"
+        },
+        {
+          "text": "I need digital marketing ideas."
+        },
+        {
+          "text": "I want online advertising"
+        },
+        {
+          "text": "I want to advertise my company digitally"
+        },
+        {
+          "text": "My company wants digital promotions"
         }
       ],
-      "description": ""
+      "description": "User wants business and marketing services"
     },
     {
-      "intent": "Mobile_Dev",
+      "intent": "mobiledev",
       "examples": [
         {
-          "text": "I want an app for my business"
+          "text": "Can you give me a mobile developer?"
         },
         {
-          "text": "mobile application"
+          "text": "Can you make me a mobile app?"
         },
         {
-          "text": "application"
+          "text": "Do you offer mobile development"
         },
         {
-          "text": "mobile app"
+          "text": "I am interested in mobile computing"
         },
         {
-          "text": "app"
+          "text": "I want a mobile app"
         },
         {
-          "text": "I was looking for developers to build me an app"
+          "text": "My company would like to go mobile"
+        },
+        {
+          "text": "start"
+        },
+        {
+          "text": "We are looking for a mobile developer"
         }
       ],
-      "description": ""
+      "description": "User needs any mobile development service"
     },
     {
-      "intent": "UI_Designers",
+      "intent": "userreserach",
       "examples": [
         {
-          "text": "UI Designers"
+          "text": "Can you help me research our client base?"
         },
         {
-          "text": "I'm looking for UI designers"
+          "text": "Can you provide user experience research services"
         },
         {
-          "text": "UI"
+          "text": "I need a user's perspective"
         },
         {
-          "text": "User Interface designers"
+          "text": "I want a user oriented application"
         },
         {
-          "text": "I'm looking for User Interface designers"
+          "text": "I want to better understand my users"
+        },
+        {
+          "text": "I want to upgrade my website to gain more clients."
         }
       ],
-      "description": ""
+      "description": "User wants services regarding to target user experience research/ interviews"
     },
     {
-      "intent": "UX_Designers",
+      "intent": "webdev",
       "examples": [
         {
-          "text": "UX"
+          "text": "Can you make me a web app?"
         },
         {
-          "text": "I'm looking for UI designers"
+          "text": "I need a landing page"
         },
         {
-          "text": "I'm looking for User Experience designers"
+          "text": "I need web development"
         },
         {
-          "text": "UX Designers"
+          "text": "I want a website"
         },
         {
-          "text": "User Experience"
+          "text": "I would like a website for my company"
+        },
+        {
+          "text": "My company needs a website"
+        },
+        {
+          "text": "webdev"
         }
       ],
-      "description": ""
-    },
-    {
-      "intent": "WebPage",
-      "examples": [
-        {
-          "text": "Webpage"
-        },
-        {
-          "text": "web"
-        },
-        {
-          "text": "page"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "WebType",
-      "examples": [
-        {
-          "text": "web app"
-        },
-        {
-          "text": "web page"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "WebDev",
-      "examples": [
-        {
-          "text": "WebDev"
-        },
-        {
-          "text": "website"
-        },
-        {
-          "text": "I'm looking for website developers"
-        },
-        {
-          "text": "I want a website for my business"
-        },
-        {
-          "text": "web app"
-        },
-        {
-          "text": "I'm looking for web developers"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "mobile_app",
-      "examples": [
-        {
-          "text": "mobile app"
-        },
-        {
-          "text": "app"
-        }
-      ],
-      "description": ""
+      "description": "User wants any web development service - landing page, web app"
     }
   ],
   "entities": [
     {
-      "entity": "designers_develpers",
+      "entity": "acknowledgement",
       "values": [
         {
           "type": "synonyms",
-          "value": "designers",
-          "synonyms": []
+          "value": "no",
+          "synonyms": [
+            "never",
+            "nope",
+            "no thank you",
+            "not today ",
+            "thanks but no"
+          ]
         },
         {
           "type": "synonyms",
-          "value": "developers",
-          "synonyms": []
+          "value": "yes",
+          "synonyms": [
+            "alright",
+            "I can",
+            "okay ",
+            "sure ",
+            "ya",
+            "yea",
+            "yeah"
+          ]
         }
       ],
       "fuzzy_match": true
     },
     {
-      "entity": "mobile_app",
+      "entity": "budget",
       "values": [
         {
           "type": "synonyms",
-          "value": "application",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "mobile app",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "iOS",
+          "value": "large",
           "synonyms": [
-            "iOS App",
-            "iPhone"
+            "100",
+            "30",
+            "35",
+            "50",
+            "big",
+            "bigger",
+            "expensive",
+            "high"
           ]
         },
+        {
+          "type": "synonyms",
+          "value": "medium",
+          "synonyms": [
+            "20",
+            "25",
+            "average",
+            "normal",
+            "typical"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "open",
+          "synonyms": [
+            "I don't know",
+            "not sure",
+            "Open budget",
+            "unknown"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "small",
+          "synonyms": [
+            "10",
+            "15",
+            "low"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "contact",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "email",
+          "synonyms": [
+            "@",
+            "edu",
+            "email address",
+            "gmail ",
+            "hotmail",
+            "yahoo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "phone",
+          "synonyms": [
+            "cell ",
+            "cell phone",
+            "mobile ",
+            "phone number"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "industry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Advertising",
+          "synonyms": [
+            "ads",
+            "advertisements ",
+            "marketing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Agriculture",
+          "synonyms": [
+            "farming",
+            "livestock ",
+            "plants"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Construction",
+          "synonyms": [
+            "builder",
+            "building ",
+            "construction management",
+            "industrial construction",
+            "roads"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Education",
+          "synonyms": [
+            "college ",
+            "elementary school",
+            "high school",
+            "learning tool",
+            "middle school",
+            "professor ",
+            "school system ",
+            "teacher",
+            "university "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Energy",
+          "synonyms": [
+            "coal",
+            "electricity ",
+            "energy conservation",
+            "fuel extraction",
+            "natural gas",
+            "nuclear power plant",
+            "oil ",
+            "power engineering",
+            "renewable fuel",
+            "renewable resources"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Entertainment",
+          "synonyms": [
+            "actor",
+            "artist",
+            "baseball",
+            "basketball",
+            "football",
+            "singer ",
+            "sports"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Finance",
+          "synonyms": [
+            "accounting",
+            "banking",
+            "money"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Food",
+          "synonyms": [
+            "cafe",
+            "cafeteria ",
+            "coffee shop",
+            "food distribution",
+            "food service",
+            "restaurant "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Health care",
+          "synonyms": [
+            "dentist ",
+            "doctor",
+            "health ",
+            "health services",
+            "hospital ",
+            "medical ",
+            "nurse"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hospitality",
+          "synonyms": [
+            "amusement park",
+            "hotel ",
+            "tourism "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Insurance",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pharmaceutical",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Real estate",
+          "synonyms": [
+            "property"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Retail",
+          "synonyms": [
+            "clothing store",
+            "online store ",
+            "store"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sales",
+          "synonyms": [
+            "business",
+            "e-commerce",
+            "ecommerce ",
+            "salesman "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Technology",
+          "synonyms": [
+            "computers",
+            "IT",
+            "tech",
+            "technological services",
+            "web"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Transportation",
+          "synonyms": [
+            "airplane",
+            "busses",
+            "cars",
+            "motor vehicles",
+            "trains",
+            "transport"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mobile-resume",
+      "values": [
         {
           "type": "synonyms",
           "value": "android",
           "synonyms": [
-            "android app"
+            "android studio ",
+            "linux"
           ]
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
-      "entity": "developers",
-      "values": [
+        },
         {
           "type": "synonyms",
-          "value": "developers",
-          "synonyms": []
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
-      "entity": "web_app",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "webapp",
+          "value": "augmented reality",
           "synonyms": [
-            "web app"
+            "ar",
+            "computer-generated perception"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cross platform",
+          "synonyms": [
+            "cross ",
+            "react ",
+            "react native "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ios",
+          "synonyms": [
+            "apple",
+            "apple watch",
+            "ipad",
+            "iphone"
           ]
         }
       ],
       "fuzzy_match": true
     },
     {
-      "entity": "web_app_services",
+      "entity": "timeline",
       "values": [
         {
           "type": "synonyms",
-          "value": "delivery",
-          "synonyms": []
+          "value": "long",
+          "synonyms": [
+            "10",
+            "10 months",
+            "11",
+            "11 months",
+            "12",
+            "12 months",
+            "1 year",
+            "7",
+            "7 months",
+            "8",
+            "8 months",
+            "9",
+            "9 months",
+            "a year",
+            "long term ",
+            "long timeline"
+          ]
         },
         {
           "type": "synonyms",
-          "value": "e-commerce",
-          "synonyms": []
+          "value": "medium",
+          "synonyms": [
+            "4",
+            "5",
+            "6",
+            "average",
+            "five months",
+            "four months",
+            "six months"
+          ]
         },
         {
           "type": "synonyms",
-          "value": "shopify",
-          "synonyms": []
+          "value": "short",
+          "synonyms": [
+            "1 ",
+            "2",
+            "3",
+            "asap",
+            "fast",
+            "one month",
+            "quick",
+            "short term",
+            "soon",
+            "three months",
+            "two months"
+          ]
         }
       ],
       "fuzzy_match": true
     },
     {
-      "entity": "UX",
+      "entity": "web-resume",
       "values": [
         {
           "type": "synonyms",
-          "value": "UX Designer",
+          "value": "designer",
           "synonyms": []
         },
         {
           "type": "synonyms",
-          "value": "UX",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "User Experience",
-          "synonyms": []
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
-      "entity": "webpage",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "web page",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "landing page",
+          "value": "developer",
           "synonyms": []
         }
       ],
@@ -280,249 +538,6 @@
     }
   },
   "dialog_nodes": [
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_5_1596399247768",
-      "event_name": "focus",
-      "dialog_node": "handler_3_1596399247813",
-      "previous_sibling": "handler_2_1596399247813"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_5_1596399247768",
-      "event_name": "input",
-      "dialog_node": "handler_2_1596399247813"
-    },
-    {
-      "type": "event_handler",
-      "output": {},
-      "parent": "slot_5_1596388803826",
-      "event_name": "focus",
-      "dialog_node": "handler_2_1596388803838",
-      "previous_sibling": "handler_1_1596388803838"
-    },
-    {
-      "type": "event_handler",
-      "parent": "slot_5_1596388803826",
-      "event_name": "input",
-      "dialog_node": "handler_1_1596388803838"
-    },
-    {
-      "type": "standard",
-      "title": "UX",
-      "output": {
-        "generic": [
-          {
-            "query": "UX Desinger, User Experience, UX",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "node_1_1596385685521",
-      "conditions": "@UX",
-      "dialog_node": "node_3_1596385711193",
-      "previous_sibling": "slot_5_1596388803826"
-    },
-    {
-      "type": "slot",
-      "parent": "node_1_1596385685521",
-      "dialog_node": "slot_5_1596388803826"
-    },
-    {
-      "type": "standard",
-      "title": "Developers2",
-      "output": {
-        "generic": [
-          {
-            "query": "Developers, full stack development, back end development, front end development",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "node_6_1596415569673",
-      "conditions": "@designers_develpers:developers",
-      "dialog_node": "node_2_1596421871028",
-      "previous_sibling": "node_1_1596421856386"
-    },
-    {
-      "type": "standard",
-      "title": "Designers1",
-      "output": {
-        "generic": [
-          {
-            "query": "Designers, Designer, UI Designers, UX Designers",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "node_6_1596415569673",
-      "conditions": "@designers_develpers:designers",
-      "dialog_node": "node_1_1596421856386"
-    },
-    {
-      "type": "slot",
-      "parent": "Welcome",
-      "dialog_node": "slot_5_1596399247768",
-      "previous_sibling": "node_1_1596420383252"
-    },
-    {
-      "type": "standard",
-      "title": "Mobile App",
-      "output": {
-        "generic": [
-          {
-            "query": "Android, Android Studio, ios, swift, objective-c, ",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "Welcome",
-      "conditions": "@mobile_app",
-      "dialog_node": "node_1_1596420383252",
-      "previous_sibling": "node_6_1596415569673"
-    },
-    {
-      "type": "standard",
-      "title": "Web App",
-      "output": {
-        "generic": [
-          {
-            "title": "Are you looking for web designers or developers?",
-            "options": [
-              {
-                "label": "web designers",
-                "value": {
-                  "input": {
-                    "text": "Designers1"
-                  }
-                }
-              },
-              {
-                "label": "web developers",
-                "value": {
-                  "input": {
-                    "text": "Developers2"
-                  }
-                }
-              }
-            ],
-            "response_type": "option"
-          }
-        ]
-      },
-      "parent": "Welcome",
-      "conditions": "@web_app",
-      "dialog_node": "node_6_1596415569673",
-      "previous_sibling": "node_1_1596414283650"
-    },
-    {
-      "type": "standard",
-      "title": "Web Page",
-      "output": {
-        "generic": [
-          {
-            "title": "Are you looking for designers or developers?",
-            "options": [
-              {
-                "label": "Designers",
-                "value": {
-                  "input": {
-                    "text": "Designers"
-                  }
-                }
-              },
-              {
-                "label": "Developers",
-                "value": {
-                  "input": {
-                    "text": "Developers"
-                  }
-                }
-              }
-            ],
-            "response_type": "option"
-          }
-        ]
-      },
-      "parent": "Welcome",
-      "conditions": "@webpage",
-      "dialog_node": "node_1_1596414283650"
-    },
-    {
-      "type": "standard",
-      "title": "Developers",
-      "output": {
-        "generic": [
-          {
-            "query": "Developers, full stack development, back end development, front end development",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "node_1_1596414283650",
-      "conditions": "@designers_develpers:developers",
-      "dialog_node": "node_3_1596420407004",
-      "previous_sibling": "node_10_1596420399005"
-    },
-    {
-      "type": "standard",
-      "title": "Designers",
-      "output": {
-        "generic": [
-          {
-            "query": "Designers, Designer, UI Designers, UX Designers",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "node_1_1596414283650",
-      "conditions": "@designers_develpers:designers",
-      "dialog_node": "node_10_1596420399005"
-    },
-    {
-      "type": "standard",
-      "title": "UI",
-      "output": {
-        "generic": [
-          {
-            "query": "UI Designer, User Interface, UI",
-            "filter": "",
-            "query_type": "natural_language",
-            "response_type": "search_skill"
-          }
-        ]
-      },
-      "parent": "node_3_1596327524593",
-      "conditions": "@UI",
-      "dialog_node": "node_2_1596385703666"
-    },
-    {
-      "type": "standard",
-      "title": "Digital Marketing",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_2_1596403094841",
-      "previous_sibling": "node_10_1596387463500"
-    },
-    {
-      "type": "standard",
-      "title": "User Research",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_1_1596403113879",
-      "previous_sibling": "node_2_1596403094841"
-    },
     {
       "type": "standard",
       "title": "Anything else",
@@ -547,45 +562,728 @@
       },
       "conditions": "anything_else",
       "dialog_node": "Anything else",
-      "previous_sibling": "node_1_1596403113879",
+      "previous_sibling": "node_7_1598369316733",
       "disambiguation_opt_out": true
     },
     {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1600116047746",
+      "context": {
+        "industry": "@industry"
+      },
+      "conditions": "@industry",
+      "event_name": "input",
+      "dialog_node": "handler_11_1600116047746"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1600109611985",
+      "context": {
+        "timeline": "@timeline"
+      },
+      "conditions": "@timeline",
+      "event_name": "input",
+      "dialog_node": "handler_1_1600109611999"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What industry would your business fall under?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1600116047746",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1600116047746",
+      "previous_sibling": "handler_11_1600116047746"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_15_1600116558268",
+      "context": {
+        "budget": "@budget"
+      },
+      "conditions": "@budget",
+      "event_name": "input",
+      "dialog_node": "handler_16_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your budget range?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_15_1600116558268",
+      "event_name": "focus",
+      "dialog_node": "handler_17_1600116558268",
+      "previous_sibling": "handler_16_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Would you consider your budget low, average, or high?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_15_1600116558268",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_18_1600116558268",
+      "previous_sibling": "handler_17_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_19_1600116558268",
+      "context": {
+        "timeline": "@timeline"
+      },
+      "conditions": "@timeline",
+      "event_name": "input",
+      "dialog_node": "handler_20_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your ideal timeline?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_19_1600116558268",
+      "event_name": "focus",
+      "dialog_node": "handler_21_1600116558268",
+      "previous_sibling": "handler_20_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_22_1600116558268",
+      "context": {
+        "industry": "@industry"
+      },
+      "conditions": "@industry",
+      "event_name": "input",
+      "dialog_node": "handler_23_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What industry would your business fall under?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_22_1600116558268",
+      "event_name": "focus",
+      "dialog_node": "handler_24_1600116558268",
+      "previous_sibling": "handler_23_1600116558268"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_27_1600116678651",
+      "context": {
+        "budget": "@budget"
+      },
+      "conditions": "@budget",
+      "event_name": "input",
+      "dialog_node": "handler_28_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your budget range?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_27_1600116678651",
+      "event_name": "focus",
+      "dialog_node": "handler_29_1600116678651",
+      "previous_sibling": "handler_28_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Would you consider your budget low, average, or high?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_27_1600116678651",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_30_1600116678651",
+      "previous_sibling": "handler_29_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_31_1600116678651",
+      "context": {
+        "timeline": "@timeline"
+      },
+      "conditions": "@timeline",
+      "event_name": "input",
+      "dialog_node": "handler_32_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your ideal timeline?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_31_1600116678651",
+      "event_name": "focus",
+      "dialog_node": "handler_33_1600116678651",
+      "previous_sibling": "handler_32_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_34_1600116678651",
+      "context": {
+        "industry": "@industry"
+      },
+      "conditions": "@industry",
+      "event_name": "input",
+      "dialog_node": "handler_35_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What industry would your business fall under?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_34_1600116678651",
+      "event_name": "focus",
+      "dialog_node": "handler_36_1600116678651",
+      "previous_sibling": "handler_35_1600116678651"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_39_1600116718860",
+      "context": {
+        "budget": "@budget"
+      },
+      "conditions": "@budget",
+      "event_name": "input",
+      "dialog_node": "handler_40_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your budget range?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_39_1600116718860",
+      "event_name": "focus",
+      "dialog_node": "handler_41_1600116718860",
+      "previous_sibling": "handler_40_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1600109514254",
+      "context": {
+        "budget": "@budget"
+      },
+      "conditions": "@budget",
+      "event_name": "input",
+      "dialog_node": "handler_4_1600109514304"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1600109736989",
+      "context": {
+        "industry": "@industry"
+      },
+      "conditions": "@industry",
+      "event_name": "input",
+      "dialog_node": "handler_4_1600109737001"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1600116047746",
+      "context": {
+        "budget": "@budget"
+      },
+      "conditions": "@budget",
+      "event_name": "input",
+      "dialog_node": "handler_4_1600116047746"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Would you consider your budget low, average, or high?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_39_1600116718860",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_42_1600116718860",
+      "previous_sibling": "handler_41_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_43_1600116718860",
+      "context": {
+        "timeline": "@timeline"
+      },
+      "conditions": "@timeline",
+      "event_name": "input",
+      "dialog_node": "handler_44_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your ideal timeline?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_43_1600116718860",
+      "event_name": "focus",
+      "dialog_node": "handler_45_1600116718860",
+      "previous_sibling": "handler_44_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_46_1600116718860",
+      "context": {
+        "industry": "@industry"
+      },
+      "conditions": "@industry",
+      "event_name": "input",
+      "dialog_node": "handler_47_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What industry would your business fall under?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_46_1600116718860",
+      "event_name": "focus",
+      "dialog_node": "handler_48_1600116718860",
+      "previous_sibling": "handler_47_1600116718860"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What industry would your business fall under?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1600109736989",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1600109737001",
+      "previous_sibling": "handler_4_1600109737001"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your budget range?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1600116047746",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1600116047746",
+      "previous_sibling": "handler_4_1600116047746"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_51_1600117372921",
+      "context": {
+        "budget": "@budget"
+      },
+      "conditions": "@budget",
+      "event_name": "input",
+      "dialog_node": "handler_52_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your budget range?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_51_1600117372921",
+      "event_name": "focus",
+      "dialog_node": "handler_53_1600117372921",
+      "previous_sibling": "handler_52_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Would you consider your budget low, average, or high?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_51_1600117372921",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_54_1600117372921",
+      "previous_sibling": "handler_53_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_55_1600117372921",
+      "context": {
+        "timeline": "@timeline"
+      },
+      "conditions": "@timeline",
+      "event_name": "input",
+      "dialog_node": "handler_56_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your ideal timeline?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_55_1600117372921",
+      "event_name": "focus",
+      "dialog_node": "handler_57_1600117372921",
+      "previous_sibling": "handler_56_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_58_1600117372921",
+      "context": {
+        "industry": "@industry"
+      },
+      "conditions": "@industry",
+      "event_name": "input",
+      "dialog_node": "handler_59_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What industry would your business fall under?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_58_1600117372921",
+      "event_name": "focus",
+      "dialog_node": "handler_60_1600117372921",
+      "previous_sibling": "handler_59_1600117372921"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Would you consider your budget low, average, or high?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1600116047746",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_6_1600116047746",
+      "previous_sibling": "handler_5_1600116047746"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your ideal timeline?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1600109611985",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1600109611999",
+      "previous_sibling": "handler_1_1600109611999"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1600116047746",
+      "context": {
+        "timeline": "@timeline"
+      },
+      "conditions": "@timeline",
+      "event_name": "input",
+      "dialog_node": "handler_8_1600116047746"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your budget range?",
+            ""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1600109514254",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1600109514304",
+      "previous_sibling": "handler_4_1600109514304"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Would you consider your budget low, average, or high?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1600109514254",
+      "conditions": "true",
+      "event_name": "nomatch",
+      "dialog_node": "handler_9_1600114416358",
+      "previous_sibling": "handler_9_1600109514304"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What is your ideal timeline?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1600116047746",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1600116047746",
+      "previous_sibling": "handler_8_1600116047746"
+    },
+    {
       "type": "standard",
-      "title": "Product Designer",
+      "title": "Mobile dev",
+      "output": {
+        "generic": [
+          {
+            "title": "What kind of mobile development services are you looking for?",
+            "options": [
+              {
+                "label": "Android development",
+                "value": {
+                  "input": {
+                    "text": "android"
+                  }
+                }
+              },
+              {
+                "label": "iOS development",
+                "value": {
+                  "input": {
+                    "text": "ios"
+                  }
+                }
+              },
+              {
+                "label": "Cross platform ",
+                "value": {
+                  "input": {
+                    "text": "cross"
+                  }
+                }
+              },
+              {
+                "label": "Augmented reality",
+                "value": {
+                  "input": {
+                    "text": "ar"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1598369316733",
+      "conditions": "#mobiledev",
+      "dialog_node": "node_10_1600104983478",
+      "previous_sibling": "node_6_1598370368495"
+    },
+    {
+      "type": "standard",
+      "title": "cross platform dev",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "I see that you are looking for a product designer."
+                "text": "We can provide you options for developers with cross platform experience. Can you answer a few more questions regarding your business's needs?"
               }
             ],
             "response_type": "text",
             "selection_policy": "sequential"
-          },
+          }
+        ]
+      },
+      "parent": "node_10_1600104983478",
+      "conditions": "@mobile-resume:(cross platform)",
+      "dialog_node": "node_10_1600108381763",
+      "previous_sibling": "node_6_1600108212800"
+    },
+    {
+      "type": "frame",
+      "title": "acknowledgement ",
+      "output": {
+        "generic": [
           {
-            "query": "product designer",
+            "values": [
+              {
+                "text": "Thank you for your time and responses! I am now calculating the ideal service providers to satisfy your business needs..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1600108566013",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@acknowledgement:yes",
+      "dialog_node": "node_1_1600116047726"
+    },
+    {
+      "type": "frame",
+      "title": "acknowledgement",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your time and responses! I am now calculating the ideal service providers to satisfy your business needs..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1600106670341",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@acknowledgement:yes",
+      "dialog_node": "node_13_1600116558251"
+    },
+    {
+      "type": "standard",
+      "title": "provide resumes",
+      "output": {
+        "generic": [
+          {
+            "query": "ios, swift",
             "filter": "",
             "query_type": "natural_language",
             "response_type": "search_skill"
           }
         ]
       },
-      "conditions": "#product_designer",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_10_1596387463500",
-      "previous_sibling": "node_1_1596385685521"
+      "parent": "node_13_1600116558251",
+      "conditions": "true",
+      "dialog_node": "node_14_1600116558268"
     },
     {
       "type": "standard",
-      "title": "UI Designers",
+      "title": "designer",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "I see that you're looking for UI Designers."
+                "text": "We can provide you options for designers with WordPress experience. Can you answer a few more questions regarding your business's needs?"
+              },
+              {
+                "text": "We can provide you options for designers with WordPress experience. Would you please answer a couple questions regarding your business's needs?"
+              },
+              {
+                "text": "We can provide you several options for landing page designers. Can you answer a few more questions regarding your business's needs?"
               }
             ],
             "response_type": "text",
@@ -593,20 +1291,19 @@
           }
         ]
       },
-      "conditions": "#UI_Designers",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_3_1596327524593",
-      "previous_sibling": "Welcome"
+      "parent": "node_6_1598370368495",
+      "conditions": "@web-resume:designer",
+      "dialog_node": "node_2_1600108544560"
     },
     {
       "type": "standard",
-      "title": "UX Designers",
+      "title": "developer ",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": "I see that you're looking for UX Designers. To best match you with your needs, what kind of service do you want to provide through your platform?"
+                "text": "We can provide you options for developers with web experience . Can you answer a few more questions regarding your business's needs?"
               }
             ],
             "response_type": "text",
@@ -614,10 +1311,309 @@
           }
         ]
       },
-      "conditions": "#UX_Designers",
-      "digress_in": "does_not_return",
-      "dialog_node": "node_1_1596385685521",
-      "previous_sibling": "node_3_1596327524593"
+      "parent": "node_6_1598370368495",
+      "conditions": "@web-resume:developer",
+      "dialog_node": "node_2_1600108566013",
+      "previous_sibling": "node_2_1600108544560"
+    },
+    {
+      "type": "standard",
+      "title": "provide resumes",
+      "output": {
+        "generic": [
+          {
+            "query": "full stack developer, HTML, CSS, front-end developer, back-end developer",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_1_1600116047726",
+      "conditions": "true",
+      "dialog_node": "node_2_1600116047746"
+    },
+    {
+      "type": "frame",
+      "title": "acknowledgement",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your time and responses! I am now calculating the ideal service providers to satisfy your business needs..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1600108212800",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@acknowledgement:yes",
+      "dialog_node": "node_25_1600116678624"
+    },
+    {
+      "type": "standard",
+      "title": "provide resumes",
+      "output": {
+        "generic": [
+          {
+            "query": "android, android studio",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_25_1600116678624",
+      "conditions": "true",
+      "dialog_node": "node_26_1600116678651"
+    },
+    {
+      "type": "frame",
+      "title": "acknowledgement",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your time and responses! I am now calculating the ideal service providers to satisfy your business needs..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1600108381763",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@acknowledgement:yes",
+      "dialog_node": "node_37_1600116718847"
+    },
+    {
+      "type": "standard",
+      "title": "provide resumes",
+      "output": {
+        "generic": [
+          {
+            "query": "ios, android",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_37_1600116718847",
+      "conditions": "true",
+      "dialog_node": "node_38_1600116718860"
+    },
+    {
+      "type": "standard",
+      "title": "iOS dev",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We can provide you options for developers with iOS experience. Can you answer a few more questions regarding your business's needs?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1600104983478",
+      "conditions": "@mobile-resume:ios",
+      "dialog_node": "node_4_1600106670341"
+    },
+    {
+      "type": "frame",
+      "title": "acknowledgement",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your time and responses! I am now calculating the ideal service providers to satisfy your business needs..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1600108384935",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@acknowledgement:yes",
+      "dialog_node": "node_49_1600117372906"
+    },
+    {
+      "type": "standard",
+      "title": "provide resumes",
+      "output": {
+        "generic": [
+          {
+            "query": "AR",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_49_1600117372906",
+      "conditions": "true",
+      "dialog_node": "node_50_1600117372921"
+    },
+    {
+      "type": "standard",
+      "title": "Web dev",
+      "output": {
+        "generic": [
+          {
+            "title": "What kind of web development are you looking for?",
+            "options": [
+              {
+                "label": "Landing page",
+                "value": {
+                  "input": {
+                    "text": "designer"
+                  }
+                }
+              },
+              {
+                "label": "Responsive web design",
+                "value": {
+                  "input": {
+                    "text": "developer"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1598369316733",
+      "conditions": "#webdev",
+      "dialog_node": "node_6_1598370368495"
+    },
+    {
+      "type": "standard",
+      "title": "Digital marketing",
+      "output": {
+        "generic": [
+          {
+            "title": "What kind of user experience services are you looking for?",
+            "options": [
+              {
+                "label": "Search engine optimization",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Conversation rate optimization",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Pay-per-click advertising",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Social media advertising ",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Amazon marketing services",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "Email marketing",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1598369316733",
+      "conditions": "#digitalmarketing",
+      "dialog_node": "node_6_1600104993737",
+      "previous_sibling": "node_7_1600104990146"
+    },
+    {
+      "type": "standard",
+      "title": "android dev",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We can provide you options for developers with Android experience. Can you answer a few more questions regarding your business's needs?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1600104983478",
+      "conditions": "@mobile-resume:android",
+      "dialog_node": "node_6_1600108212800",
+      "previous_sibling": "node_4_1600106670341"
+    },
+    {
+      "type": "standard",
+      "title": "AR dev",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We can provide you options for developers with augmented reality experience. Can you answer a few more questions regarding your business's needs?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1600104983478",
+      "conditions": "@mobile-resume:(augmented reality)",
+      "dialog_node": "node_6_1600108384935",
+      "previous_sibling": "node_10_1600108381763"
     },
     {
       "type": "standard",
@@ -627,44 +1623,36 @@
           {
             "values": [
               {
-                "text": "Hi. I am here to advise you on appropriate designers and developers to successfully meet your business goals"
+                "text": "Hi, I am a virtual assistant! I'm here to provide technical advice to help you achieve your business goals."
               }
             ],
             "response_type": "text",
             "selection_policy": "sequential"
           },
           {
-            "title": "Choose one of the digital service that you feel most closely aligns with your current business",
+            "title": "Choose the digital service that most closely aligns with your current business",
             "options": [
               {
-                "label": "Web App",
+                "label": "Web Development ",
                 "value": {
                   "input": {
-                    "text": "Web App"
+                    "text": "webdev"
                   }
                 }
               },
               {
-                "label": "Web Page",
+                "label": "Mobile Development ",
                 "value": {
                   "input": {
-                    "text": "Web Page"
+                    "text": "mobile app "
                   }
                 }
               },
               {
-                "label": "User Research/UX Design",
+                "label": "User Experience Research",
                 "value": {
                   "input": {
-                    "text": "User Research"
-                  }
-                }
-              },
-              {
-                "label": "Mobile App",
-                "value": {
-                  "input": {
-                    "text": "Mobile App"
+                    "text": "user experience research"
                   }
                 }
               },
@@ -672,7 +1660,15 @@
                 "label": "Digital Marketing",
                 "value": {
                   "input": {
-                    "text": "Digital Marketing"
+                    "text": "digital marketing"
+                  }
+                }
+              },
+              {
+                "label": "Other",
+                "value": {
+                  "input": {
+                    "text": ""
                   }
                 }
               }
@@ -682,14 +1678,250 @@
         ]
       },
       "conditions": "welcome",
-      "dialog_node": "Welcome"
-    }
-  ],
-  "counterexamples": [
+      "dialog_node": "node_7_1598369316733"
+    },
     {
-      "text": "\"location\""
+      "type": "standard",
+      "title": "UX research",
+      "output": {
+        "generic": [
+          {
+            "title": "What kind of user experience services are you looking for?",
+            "options": [
+              {
+                "label": "User research/ analysis",
+                "value": {
+                  "input": {
+                    "text": "user research"
+                  }
+                }
+              },
+              {
+                "label": "User experience consulting",
+                "value": {
+                  "input": {
+                    "text": "user consulting"
+                  }
+                }
+              },
+              {
+                "label": "Customer journey mapping",
+                "value": {
+                  "input": {
+                    "text": "customer map"
+                  }
+                }
+              },
+              {
+                "label": "Design thinking",
+                "value": {
+                  "input": {
+                    "text": "design thinking"
+                  }
+                }
+              },
+              {
+                "label": "Interface design",
+                "value": {
+                  "input": {
+                    "text": "UI design"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1598369316733",
+      "conditions": "#userreserach",
+      "dialog_node": "node_7_1600104990146",
+      "previous_sibling": "node_10_1600104983478"
+    },
+    {
+      "type": "standard",
+      "title": "provide resumes",
+      "output": {
+        "generic": [
+          {
+            "query": "wordpress, UX designer, UI designer",
+            "filter": "",
+            "query_type": "natural_language",
+            "response_type": "search_skill"
+          }
+        ]
+      },
+      "parent": "node_9_1600109509570",
+      "conditions": "true",
+      "dialog_node": "node_7_1600111921933"
+    },
+    {
+      "type": "frame",
+      "title": "acknowledgement ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your time and responses! I am now calculating the ideal service providers to satisfy your business needs..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1600108544560",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@acknowledgement:yes",
+      "dialog_node": "node_9_1600109509570"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1600116047726",
+      "variable": "$industry",
+      "dialog_node": "slot_10_1600116047746",
+      "previous_sibling": "slot_7_1600116047746"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_13_1600116558251",
+      "variable": "$budget",
+      "dialog_node": "slot_15_1600116558268",
+      "previous_sibling": "node_14_1600116558268"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_13_1600116558251",
+      "variable": "$timeline",
+      "dialog_node": "slot_19_1600116558268",
+      "previous_sibling": "slot_15_1600116558268"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_13_1600116558251",
+      "variable": "$industry",
+      "dialog_node": "slot_22_1600116558268",
+      "previous_sibling": "slot_19_1600116558268"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_25_1600116678624",
+      "variable": "$budget",
+      "dialog_node": "slot_27_1600116678651",
+      "previous_sibling": "node_26_1600116678651"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_25_1600116678624",
+      "variable": "$timeline",
+      "dialog_node": "slot_31_1600116678651",
+      "previous_sibling": "slot_27_1600116678651"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1600109509570",
+      "variable": "$industry",
+      "dialog_node": "slot_3_1600109736989",
+      "previous_sibling": "slot_4_1600109611985"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1600116047726",
+      "variable": "$budget",
+      "dialog_node": "slot_3_1600116047746",
+      "previous_sibling": "node_2_1600116047746"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_25_1600116678624",
+      "variable": "$industry",
+      "dialog_node": "slot_34_1600116678651",
+      "previous_sibling": "slot_31_1600116678651"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_37_1600116718847",
+      "variable": "$budget",
+      "dialog_node": "slot_39_1600116718860",
+      "previous_sibling": "node_38_1600116718860"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1600109509570",
+      "variable": "$timeline",
+      "dialog_node": "slot_4_1600109611985",
+      "previous_sibling": "slot_9_1600109514254"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_37_1600116718847",
+      "variable": "$timeline",
+      "dialog_node": "slot_43_1600116718860",
+      "previous_sibling": "slot_39_1600116718860"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_37_1600116718847",
+      "variable": "$industry",
+      "dialog_node": "slot_46_1600116718860",
+      "previous_sibling": "slot_43_1600116718860"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_49_1600117372906",
+      "variable": "$budget",
+      "dialog_node": "slot_51_1600117372921",
+      "previous_sibling": "node_50_1600117372921"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_49_1600117372906",
+      "variable": "$timeline",
+      "dialog_node": "slot_55_1600117372921",
+      "previous_sibling": "slot_51_1600117372921"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_49_1600117372906",
+      "variable": "$industry",
+      "dialog_node": "slot_58_1600117372921",
+      "previous_sibling": "slot_55_1600117372921"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1600116047726",
+      "variable": "$timeline",
+      "dialog_node": "slot_7_1600116047746",
+      "previous_sibling": "slot_3_1600116047746"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_9_1600109509570",
+      "variable": "$budget",
+      "dialog_node": "slot_9_1600109514254",
+      "previous_sibling": "node_7_1600111921933"
     }
   ],
+  "counterexamples": [],
   "system_settings": {
     "off_topic": {
       "enabled": true
@@ -708,10 +1940,10 @@
     "human_agent_assist": {
       "prompt": "Did you mean:"
     },
-    "spelling_auto_correct": true
+    "spelling_auto_correct": false
   },
   "learning_opt_out": false,
-  "name": "Job Convo",
+  "name": "Dorian's Job Convo",
   "language": "en",
   "description": ""
 }
